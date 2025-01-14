@@ -114,7 +114,7 @@ RCT_EXPORT_MODULE();
     alignmentSetting.alignment = alignment;
     secureField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"PlaceHolder Text" attributes:@{NSForegroundColorAttributeName: color,NSParagraphStyleAttributeName : alignmentSetting}];
     secureField.adjustsFontSizeToFitWidth = true;
-    secureField.placeholder = @"This action has been restricted by your app.";   
+    secureField.placeholder = @"";   
     [view sendSubviewToBack:secureField];
     [view addSubview:secureField];
     [view.layer.superlayer addSublayer:secureField.layer];
